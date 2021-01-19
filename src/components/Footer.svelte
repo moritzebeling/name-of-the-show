@@ -16,7 +16,7 @@
 		<p>{channel.follower_count} Followers</p>
 	</div>
 	<div>
-		<a rel="noopener noreferrer" target="_blank" href="https://www.are.na/gif/{channel.slug}">Add content</a>
+		<a rel="noopener noreferrer" target="_blank" href="https://www.are.na/gif/{channel.slug}">Submit content</a>
 		<a rel="noopener noreferrer" target="_blank" href="https://github.com/moritzebeling/name-of-the-show">Contribute to website</a>
 	</div>
 </footer>
@@ -24,11 +24,12 @@
 <style>
 
 	footer {
-		position: fixed;
-		bottom: 0;
+		position: absolute;
+		top: 550vh;
+		/* bottom: 0; */
 		left: 0;
 		background-color: #000;
-		color: #fff;
+		color: #444;
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
@@ -38,6 +39,12 @@
 	p, a {
         display: inline-block;
         margin: 0.5em 0.25em;
+	}
+	a {
+		transition: color 300ms ease;
+	}
+	a:hover {
+		color: #f00;
 	}
 
 </style>

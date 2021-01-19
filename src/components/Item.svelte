@@ -1,6 +1,6 @@
 <script>
 
-    export let post = {};
+    export let item = {};
 
     function random( min, max ){
         return Math.floor(Math.random() * (max-min)) + min;
@@ -15,19 +15,23 @@
 
 </script>
 
-{#if post.image}    
-    <article style="top: {random(-10,90)}vh; left: {random(-10,90)}vw; width: {random(10,30)}vw;">
+<article style="top: {random(10,500)}vh; left: {random(10,70)}vw; width: {random(10,30)}vw;">
 
-        <img src={post.image.display.url} alt="" />
+    <h3>{item.generated_title}</h3>
 
-    </article>
-{/if}
+    {#if item.image}
+        <img src={item.image.display.url} alt="" />
+    {/if}
+</article>
 
 <style>
 
     article {
         position: absolute;
         width: 20vw;
+    }
+    h3 {
+        margin-bottom: 0.2em;
     }
     img {
         width: 100%;

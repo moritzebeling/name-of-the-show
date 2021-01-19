@@ -1,18 +1,18 @@
 <script>
 
     import Item from './Item.svelte';
-    
-    export let channel = {};
+
+    export let items = {};
 
 </script>
 
 <main>
 
     <ul>
-        {#each channel.contents as post}
+        {#each items as item}
             <li>
 
-                <Item {post} />
+                <Item {item} />
 
             </li>
         {/each}
@@ -21,4 +21,9 @@
 </main>
 
 <style>
+
+    main {
+        margin: 0.5rem;
+    }
+
 </style>

@@ -14,4 +14,15 @@
 
 <style>
 
+	:global( html ){
+		font-size: 16px;
+	}
+	:global( body ){
+		background-color: #000;
+		color: #fff;
+		font-family: 'Arial', sans-serif;
+		letter-spacing: 0.03em;
+		line-height: 1.2;
+	}
+
 </style>
