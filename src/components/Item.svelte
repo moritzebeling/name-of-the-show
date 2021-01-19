@@ -33,6 +33,7 @@
         animation-duration: 4s;
         opacity: 0;
         animation-iteration-count: infinite;
+        animation-timing-function: linear;
     }
     h3 {
         margin-bottom: 0.2em;
