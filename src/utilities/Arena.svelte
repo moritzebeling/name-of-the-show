@@ -14,12 +14,20 @@
 
 {#if load}
 	{#await load}
-		Loading
+		<p>Loading</p>
 	{:then channel}
 
 		<slot prop={channel}></slot>
 
 	{:catch error}
-		Error
+		<p>Error</p>
 	{/await}
 {/if}
+
+<style>
+
+    p {
+        margin: 0.5rem 0.75rem;
+    }
+
+</style>
