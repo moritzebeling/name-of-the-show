@@ -15,7 +15,7 @@
 
 </script>
 
-<article style="top: {random(10,500)}vh; left: {random(10,70)}vw; width: {random(10,30)}vw;">
+<article style="top: {random(10,500)}vh; left: {random(10,70)}vw; width: {random(10,30)}vw; animation-duration:{random(10,30)}s; animation-delay:{random(1,5)}s;">
 
     <h3>{item.generated_title}</h3>
 
@@ -29,6 +29,10 @@
     article {
         position: absolute;
         width: 20vw;
+        animation-name: fade;
+        animation-duration: 4s;
+        opacity: 0;
+        animation-iteration-count: infinite;
     }
     h3 {
         margin-bottom: 0.2em;
