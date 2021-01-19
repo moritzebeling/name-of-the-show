@@ -16,6 +16,13 @@
 
             </li>
         {/each}
+        {#each items as item}
+            <li>
+
+                <Item {item} />
+
+            </li>
+        {/each}
     </ul>
 
 </main>

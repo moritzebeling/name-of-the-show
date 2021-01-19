@@ -15,7 +15,7 @@
 
 </script>
 
-<article style="top: {random(10,500)}vh; left: {random(10,70)}vw; width: {random(10,30)}vw; animation-duration:{random(10,30)}s; animation-delay:{random(1,5)}s;">
+<article style="top: {random(10,500)}vh; left: {random(10,70)}vw; width: {random(10,35)}vw; animation-duration:{random(8,30)}s; animation-delay:{random(1,5)}s;">
 
     <h3>{item.generated_title}</h3>
 
