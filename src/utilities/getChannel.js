@@ -3,8 +3,6 @@ export async function getChannel(id) {
 
     const data = await res.json();
 
-    console.log( data );
-
     if (res.ok) {
         return data;
     } else {
